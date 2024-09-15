@@ -150,6 +150,24 @@ body{
 }
 .footer p{
     font-size:xx-large;
+    font-weight: 500;
+    box-shadow: #303131;
+    font-family: "Raleway"; 
+}
+
+.clients{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: x-large;
+    font-weight: 200;
+    padding-left: 20px;
+    font-family: "Raleway"; 
+}
+.clients p{
+    font-size:xx-large;
     font-weight: 700;
     box-shadow: #303131;
     font-family: "Raleway"; 
@@ -192,6 +210,9 @@ body{
     height: auto;
     /* text-align: center ; */
     font-size: larger;
+    background-color: rgba(230, 230, 201, 0.7);
+    border-radius: 15px;
+    padding: 10px;
 }
 .mission p{
     display: flex;
@@ -203,6 +224,9 @@ body{
     width: 50%;
     /* text-align: center; */
     font-size: larger;padding-left: 5px;
+    background-color: rgba(238, 232, 232, 0.7);
+    border-radius: 15px;
+    padding: 10px;
 }
 .vision p{
     display: flex;
@@ -272,6 +296,38 @@ body{
     font-size: larger;
     /* background-color: rgb(241, 22, 22); */
 }
+
+
+
+.image-scroller {
+    height: 20vh; /* Set the height to 20% of the viewport height */
+    overflow: hidden; /* Hide overflow to create scrolling effect */
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    gap: 60px; /* Adjust the gap between images */
+    animation: scrollImages 20s linear infinite; /* Auto-scroll effect */
+  }
+  
+  .scroll-image {
+    width: 100px; /* Set the width of the images */
+    height: 100px; /* Set the height of the images */
+    border-radius: 40%; /* Make the images round */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  /* Animation for scrolling */
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Adjust this value to control scroll distance */
+    }
+  }
+  
 
 .services{
     width: 100%;
@@ -422,6 +478,16 @@ body{
     width: 100%;
     height:50vh;
     font-family: "Raleway"; 
+    display: flex;
+    flex-direction: row;
+}
+
+.locate-left{
+    width: 40vw;
+}
+
+.locate-right{
+    width: 60vw;
 }
 
 .locate iframe{
@@ -527,7 +593,7 @@ body{
 
 .footerbruh {
     width: 100%;
-    height: 10vh;
+    height: 7vh;
     background-color: #d4d0d0;
     color: #030303;
     display: flex;
@@ -609,8 +675,8 @@ body{
     }
 
     .navbar_left img {
-        height: auto;
-        width: 80%;
+        height: 10%;
+        width: 10%;
     }
 
     .navbar_right {
@@ -701,6 +767,14 @@ body{
         width: 100%;
     }
 
+    .statleft p{
+        font-size: medium;
+    }
+
+    .statright p{
+        font-size: medium;
+    }
+
     .image-item {
         width: 90%;
         height: auto;
@@ -719,7 +793,11 @@ body{
 
     .symbols img {
         height: 30%;
-        width: 50%;
+        width: 30%;
+    }
+
+    .locate{
+        height: 20vh;
     }
 
     .whytext {
@@ -749,20 +827,20 @@ body{
         width: 100%;
     }
 
-    .footerbruh {
+    .footerbruh p{
         flex-direction: column;
         align-items: center;
-        height: auto;
+        height: 1vh;
         padding: 10px;
     }
 
     .footer-left, .footer-right {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
 
     .popup {
         width: 80%;
-        font-size: 14px;
+        font-size: 2px;
     }
 }
 
@@ -786,6 +864,3 @@ body{
         margin-top: 0%;
     }
 }   
-
-    
-
