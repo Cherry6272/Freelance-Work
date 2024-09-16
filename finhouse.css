@@ -158,16 +158,14 @@ body {
     height: 25%;
     display: flex;
     justify-content: center;
-    align-items: end;
-    font-size: x-large;
-    font-weight: 200;
-    padding-left: 20px;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 500;
+    padding: 25px;
     font-family: "Raleway";
 }
 
 .clients p {
-    font-size: xx-large;
-    font-weight: 700;
     box-shadow: #303131;
     font-family: "Raleway";
 }
@@ -660,30 +658,57 @@ body {
     transform: translateY(0);
 }
 
-/* for smartphone */
+//* Default styles for desktop and larger screens (no changes needed here) */
+
+/* Styles for tablets (between 600px and 980px) */
+@media screen and (max-width: 980px) {
+    .right_content img {
+        width: 80%; /* Ensure images fit well within the container */
+    }
+
+    .navbar {
+        flex-direction: row; /* Adjust layout for smaller tablets */
+    }
+
+    #next{
+        overflow-x: hidden;
+    }
+
+    .contact_user {
+        display: flex;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+
+    .features_main {
+        height: 50%; /* Adjust height for better fit */
+    }
+
+    .statstat {
+        height: 50%;
+        margin-bottom: 0%; /* Prevent overflow */
+    }
+
+    .services {
+        margin-top: 0%; /* Prevent extra spacing */
+    }
+}
+
+/* Styles for mobile screens (600px and below) */
 @media screen and (max-width: 600px) {
     .navbar {
-        height: 15%;
+        height: auto; /* Adjust for stacked items */
         flex-direction: column;
         justify-content: space-around;
-        display: flex;
-        flex-direction: row;
+    }
+
+    #next {
+        overflow-x: hidden; /* Prevent horizontal overflow */
     }
 
     .navbar_left, .navbar_right {
         width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .navbar_right{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .navbar_left img {
-        height: 20%;
-        width: 20%;
+        height: auto; /* Allow flexibility */
     }
 
     .navbar_right {
@@ -693,13 +718,18 @@ body {
         padding: 10px 0;
     }
 
+    .navbar_left img {
+        height: 20%; /* Adjust logo size for mobile */
+        width: 20%;
+    }
+
     .navbar_right a {
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Adjust spacing for mobile */
     }
 
     .body_container {
         flex-direction: column;
-        height: auto;
+        height: auto; /* Allow vertical growth */
     }
 
     .body_left {
@@ -710,11 +740,11 @@ body {
     }
 
     .finhouse {
-        font-size: 32px;
+        font-size: 32px; /* Scale down font size */
     }
 
     .comment {
-        font-size: medium;
+        font-size: medium; /* Ensure readability */
     }
 
     .quote button {
@@ -772,11 +802,7 @@ body {
         width: 100%;
     }
 
-    .statleft p {
-        font-size: medium;
-    }
-
-    .statright p {
+    .statleft p, .statright p {
         font-size: medium;
     }
 
@@ -814,7 +840,8 @@ body {
         height: 40%;
         padding-top: 10px;
     }
-    .info_email{
+
+    .info_email {
         font-size: 14px;
     }
 
@@ -823,12 +850,11 @@ body {
     }
 
     .company {
-        display: flex;
-        display: none;
+        display: none; /* Hide on small screens */
     }
 
     .contact_user {
-        width: 40%;
+        width: 100%;
         height: 60%;
         padding-top: 10px;
     }
@@ -840,44 +866,16 @@ body {
     .footerbruh p {
         flex-direction: column;
         align-items: center;
-        height: 1vh;
+        height: auto;
         padding: 10px;
     }
 
     .footer-left, .footer-right {
+        font-size: 10px;
     }
 
     .popup {
         width: 80%;
-        font-size: 2px;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .right_content img {
-        width: 80%;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contact_user {
-        display: flex;
-        justify-content: space-evenly;
-        height: 70%;
-    }
-
-    .features_main {
-        height: 50%;
-    }
-
-    .statstat {
-        height: 50%;
-        margin-bottom: 0%;
-    }
-
-    .services {
-        margin-top: 0%;
+        font-size: 12px; /* Adjust font size for better fit */
     }
 }
