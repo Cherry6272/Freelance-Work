@@ -5,9 +5,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('./images/page.jpeg');
+    background-image: url('./images/logo.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background:fixed;
+}
+
+*{
+    font-weight: 500;
 }
 
 #home {
@@ -37,8 +41,8 @@ body{
 }
 
 .navbar_left img {
-    height: 55px;
-    width: 100px;
+    height: 85px;
+    width: 90px;
     padding-bottom: 5px;
     padding-top: 5px;
     border-radius: 25%;
@@ -189,7 +193,14 @@ body{
     font-size: larger;
     font-family: "Raleway";
     word-spacing: 5px;
-    font-weight: 500;
+    font-weight: 800;
+
+}
+
+.about p{
+    background-color: rgba(218, 217, 217, 0.6);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .mission_vision {
@@ -471,6 +482,15 @@ body{
 
 .locate-left {
     width: 40vw;
+    height: 100%;
+}
+
+
+
+.image-container_founder img{
+    width: 450px;
+    height: 400px;
+    border-radius: 15px;
 }
 
 .locate-right {
@@ -481,6 +501,31 @@ body{
     width: 100%;
     height: 100%;
 }
+
+
+.clientss-container {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .clients-scroll {
+    display: flex;
+    align-items: center;
+    width: max-content; /* Ensures the container expands to fit all images */
+  }
+  
+  .clients-scroll img {
+    height: 100%;
+    flex-shrink: 0;
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Optional spacing between images */
+  }
+  
+
+  
 
 .gap {
     width: 100%;
@@ -554,7 +599,7 @@ body{
 
 .contact_user {
     width: 40%;
-    height: 85%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -565,7 +610,8 @@ body{
 .contact_user input {
     width: 90%;
     height: 30px;
-    border-radius: 15%;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .contact_user button {
@@ -586,7 +632,7 @@ body{
 
 .footerbruh {
     width: 100%;
-    height: 7vh;
+    height: 5vh;
     background-color: #d4d0d0;
     color: #030303;
     display: flex;
@@ -664,7 +710,7 @@ body{
     transform: translateY(0);
 }
 
-//* Default styles for desktop and larger screens (no changes needed here) */
+/* Default styles for desktop and larger screens (no changes needed here) */
 
 /* Styles for tablets (between 600px and 980px) */
 @media screen and (max-width: 980px) {
