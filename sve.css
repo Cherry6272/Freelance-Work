@@ -882,6 +882,13 @@ body{
     .locate {
         height: 20vh;
     }
+    .services p{
+        margin-right: 18px;
+    }
+
+    .clients p{
+        margin-right: 30px;
+    }
 
     .whytext {
         font-size: smaller;
@@ -906,13 +913,17 @@ body{
     }
 
     .contact_user {
-        width: 100%;
+        width: 70%;
         height: 60%;
         padding-top: 10px;
     }
 
     .contact_user input, .contact_user button {
         width: 100%;
+    }
+    .contact_user button{
+        width: 80px;
+        margin-left: 20px;
     }
 
     .footerbruh p {
@@ -929,5 +940,47 @@ body{
     .popup {
         width: 80%;
         font-size: 12px; /* Adjust font size for better fit */
+    }
+    .clientss-container {
+        height: 50vh;
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+      }
+      
+      .clients-scroll {
+        display: flex;
+        align-items: center;
+        width: max-content; /* Ensures the container expands to fit all images */
+      }
+      
+      .clients-scroll img {
+        height: 100%;
+        flex-shrink: 0;
+        width: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Optional spacing between images */
+      }
+      
+
+      .image-container_founder img{
+        width: 150px;
+        height: 130px;
+        border-radius: 15px;
+    }
+    
+    .locate-right {
+        width: 60vw;
+    }
+    
+    .locate iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-overlay_founder{
+        font-size: 10px;
+        padding: 2px;
+        background-color:#ffffff;
     }
 }
